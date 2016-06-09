@@ -12,10 +12,14 @@
   <body>
     <form class="form-inline converter-form">
       <div class="form-group">
-        <label for="user-input">enter a binary number</label>
+        <label for="user-input">enter a number</label>
         <input type="number" min=1 required="true" class="form-control" id="user-input">
       </div>
-      <button type="submit" class="btn btn-default" id="submit">to hexidecimal</button>
+      <div class="form-group">
+        <label for="user-base">enter the base your number is in</label>
+        <input type="number" min=2 max=10 required="true" class="form-control" id="user-base">
+      </div>
+      <button type="submit" class="btn btn-default" id="submit">to base ten</button>
     </form>
     <div class = "jumbotron" id="result">
     </div>
